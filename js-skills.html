@@ -232,7 +232,7 @@
 <p>You should use jQuery for these parts.</p>
 <p>We didn't include jQuery in this document, though&mdash;so your first task is to include it!</p>
 
-
+<script src="https://code.jquery.com/jquery.js"></script>
 
 <h3>Finding the Button</h3>
 <p>
@@ -244,7 +244,17 @@
 </fieldset>
 
 <script>
-  // code here for above problem
+  
+  function alertMe(evt) {
+    alert("Popup muwhahahaha!");
+  }
+
+  var button = $('.tricky-to-find')
+
+  $(button[0]).click(alertMe);
+
+
+
 </script>
 
 <div class="hint">
