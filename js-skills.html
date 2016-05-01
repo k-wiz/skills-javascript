@@ -98,6 +98,9 @@
 <input type="button" value="Show Me a Popup!" id="popup-alert-button">
 </fieldset>
 
+
+
+
 <script>
 "use strict";
   
@@ -126,6 +129,8 @@
   <!-- Hey, look, that was another way to do a button - what might it be good for? -->
 </fieldset>
 
+
+
 <script>
 "use strict"; 
   
@@ -137,9 +142,10 @@
   }
 
   button.addEventListener('click', changeGreeting);
-  
 
 </script>
+
+
 
 <div class="hint">
   <div>
@@ -166,6 +172,9 @@
   </form>
 </fieldset>
 
+
+
+
 <script>
 "use strict";
 
@@ -180,6 +189,9 @@
   form.addEventListener('submit', preventSubmit);
 
 </script>
+
+
+
 
 <div class="hint">
   <div>
@@ -207,6 +219,9 @@
   <input type="button" id="reverse-string-button" value="!nottuB">
 </fieldset>
 
+
+
+
 <script>
 
  function reverseString() {
@@ -219,7 +234,6 @@
 
  var button = document.getElementById('reverse-string-button');
  button.addEventListener('click', reverseString);
-
 
 </script>
 
@@ -243,6 +257,8 @@
   <input type="button" class="tricky-to-find" value="Pop-Up Please!">
 </fieldset>
 
+
+
 <script>
   
   function alertMe(evt) {
@@ -253,17 +269,16 @@
 
   $(button[0]).click(alertMe);
 
-
-
 </script>
+
+
+
 
 <div class="hint">
   <div>
     You can find things by class name&mdash;but then you get back an array.
   </div>
 </div>
-
-
 
 
 
@@ -280,6 +295,8 @@
        alt="Adorbz" id="kittenz-rule">
 </fieldset>
 
+
+
 <script>
   
   function changePic() {
@@ -288,8 +305,10 @@
   
   $('#kittenz-rule').click(changePic);
 
-
 </script>
+
+
+
 
 <div class="hint">
   <div>
@@ -320,9 +339,22 @@
   <input type="button" id="make-a-porcupine" value="I Want a Porcupine!">
 </fieldset>
 
+
+
+
 <script>
-  // put your code here
+
+  function picAppear() {
+    setTimeout (function() {
+      $('#cute-porcupine-image').slideDown(3000); }, 1000);
+  }
+
+  $('#make-a-porcupine').click(picAppear);   
+
 </script>
+
+
+
 
 <div class="hint">
   <div>
